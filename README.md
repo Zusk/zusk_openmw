@@ -1,3 +1,14 @@
+Zusk's OpenMW
+======
+This project primarily aims to modify certain hardcoded parameters within OpenMW, with a focus on enhancing gameplay mechanics in Morrowind. The main objectives include:
+
+* Overhauling the mechanics governing 'Known Werewolf Reactions' and 'Vampire Dialogue' in Morrowind. Currently, vampires face significant challenges in gameplay, while werewolves suffer similar limitations when discovered. The intention is to augment the effectiveness of personality attributes, speechcraft skills, and charm spells, thereby providing more nuanced interactions for player characters embodying these supernatural traits and to allow a player to play around their limitations, rather then the drawbacks being so daunting that they literally never consider these as options.
+
+* Refactoring the algorithms governing hand-to-hand combat and werewolf damage calculation. Both vanilla Morrowind and OpenMW employ a method where nominal values are deliberately set low, only to be significantly multiplied (by a factor of x35 for werewolves) during gameplay. The ultimate goal is to revise Morrowind's hand-to-hand damage formula to a more rational framework.
+
+* Removing the artificial cap on the 'sanctuary' spell effect. It's unclear why this is here.
+
+Original readme:
 OpenMW
 ======
 
