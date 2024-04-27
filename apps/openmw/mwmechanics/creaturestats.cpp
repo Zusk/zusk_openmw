@@ -359,8 +359,9 @@ namespace MWMechanics
         float evasion = (getAttribute(ESM::Attribute::Agility).getModified() / 5.0f)
             + (getAttribute(ESM::Attribute::Luck).getModified() / 10.0f);
         evasion *= getFatigueTerm();
-        evasion += std::min(100.f, mMagicEffects.getOrDefault(ESM::MagicEffect::Sanctuary).getMagnitude());
-
+        //In default OpenMW/Morrowind, Sanctuary is bounded to 100. This fork removes that - Zusk
+        //evasion += std::min(100.f, mMagicEffects.getOrDefault(ESM::MagicEffect::Sanctuary).getMagnitude());
+        evasion += mMagicEffects.getOrDefault(ESM::MagicEffect::Sanctuary).getMagnitude();
         return evasion;
     }
 
